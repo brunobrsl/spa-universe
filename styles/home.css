@@ -1,0 +1,7 @@
+@import url('../style.css');
+
+nav a:nth-child(2) {
+  color: var(--nav-selected-anchor);
+  font-size: 2.4rem;
+  font-weight: 700;
+}

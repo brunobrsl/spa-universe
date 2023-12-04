@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #000;
+  
+  --nav-selected-anchor: #FFF;
+  --nav-non-selected-anchor: #C4C4CC;
+  
+  --text-color: #E1E1E6;
+
+  --bd-button: #FFF;
+  --txt-button: #FFF;
+
+  --bg-button-hover: #FFF;
+  --txt-button-hover: #02799D;
+
+  font-size: 62.5%;
+}
+
+body, button {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #000;
+  background-image: url('./assets/bg-home.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.6rem;
+  height: 100vh;
+}
+
+nav {
+  padding: 4rem 7.2rem;
+  display: flex;
+  gap: 4.2rem;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  color: var(--nav-non-selected-anchor);
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+}
+
+nav a:hover {
+  color: var(--nav-selected-anchor);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+h1 {
+  color: var(--text-color);
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 6rem;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 2.4rem;
+  color: var(--txt-button);
+  background-color: transparent;
+  border: 2px solid var(--bd-button);
+  border-radius: .5rem;
+  padding: 1.2rem 3.2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--bg-button-hover);
+  color: var(--txt-button-hover);
+}
+
+p {
+  margin-top: 1.6rem;
+  color: var(--text-color);
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  max-width: 64.8rem;
+}
+
+.container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  margin-top: 6.4rem;
+  margin-left: 10.2rem;
+}
